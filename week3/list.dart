@@ -62,4 +62,17 @@ void main() {
       print('kredi asla alamaz');
     }
   }
+//
+  List<String> userNames = ['ali', 'mehmet', 'ayse'];
+
+  print(userNames.contains('ali'));
+
+  // BU FONKSİYON TRUE YADA FALSE DÖNDÜRÜR.
+  // BELİRTİLEN ELEMANIN OLUP OLMADIĞINI TESPİT EDER.
+
+  for (var item in userNames) {
+    if (item == 'ali') {
+      print('var');
+    }
+  }
 }
