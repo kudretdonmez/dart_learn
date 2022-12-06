@@ -1,4 +1,4 @@
-main() {
+void main() {
   String mark = 'BB';
 
   switch (mark) {

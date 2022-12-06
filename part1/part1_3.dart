@@ -1,4 +1,4 @@
-main() {
+void main() {
   String name = "kdrt";
   String surname = 'dnmz';
   var course = 'Using Dart';

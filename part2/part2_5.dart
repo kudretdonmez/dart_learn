@@ -1,4 +1,4 @@
-main() {
+void main() {
   //INCREASE AND DECREASE OPERATORS
   int num1 = 10;
   num1 = num1 + 1;

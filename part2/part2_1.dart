@@ -1,4 +1,4 @@
-main() {
+void main() {
   int num1 = 12;
   num num2 = 11;
   //var num3 = 16;

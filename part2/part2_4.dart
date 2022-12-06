@@ -1,4 +1,4 @@
-main() {
+void main() {
   double num1 = 9;
   double num2 = 6;
 
