@@ -1,3 +1,5 @@
+//*** SABİT BOYUTLU LİSTELER ***
+
 void main() {
   List<int> nums = List.filled(7, 98, growable: false);
   //? List.filled(LİSTE UZUNLUĞU, GERİ KALAN DEĞERLER, growable: false);
