@@ -5,22 +5,22 @@ void main() {
   //bizim bankaya geldiği için +5 tl ekkle
   // ya acaba 10 yapabilir miyiz?
 
-  print("Merhaba" + '${25 + 5}');
+  print("Hello" + '${25 + 5}');
 
   int userMoney = 25;
-  String userName = "Veli";
+  String userName = "ABC";
   userMoney = userMoney + 5;
   userMoney += 5;
   // üstteki ikisi de aynı sadece alttaki daha kısa
-  print("Merhaba $userName $userMoney");
-  print("-----------------");
+  print("Hi $userName $userMoney");
+
   userMoney = userMoney - 10;
-  print("Paraniz deger kaybetti $userMoney");
+  print("Your money has lost value: $userMoney");
+  print("-----------------");
+  double abcMoney = 15.2;
 
-  double ahmetMoney = 15.2;
-
-  ahmetMoney = ahmetMoney / 2;
-  print('ahmet bey paranız uçtu $ahmetMoney');
+  abcMoney = abcMoney / 2;
+  print('Your money\'s value has dropped in half $abcMoney');
 
   //userMoney = userMoney / 2;
   //usermoney int olduğu için 2ye bölündüğünde sonuş int olmaz hata verir

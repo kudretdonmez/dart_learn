@@ -2,16 +2,16 @@ void main() {
   //bu kod ekranda mesaj gösterir
   print("helloo");
 
-  print('hello' + "dostum");
+  print('hello' + "friend");
 
   print(2 + 5);
 
-  String verininAdi = "verinin değeri";
+  String dataName = "data value";
 
   String hello = "hello5";
 
   print(hello);
-  print(hello);
+  print(dataName);
 
   print(hello);
 
@@ -19,6 +19,8 @@ void main() {
 
   int money = 15;
   print(money);
+
+  print(hello + " " + "$money");
 
   //
 }
