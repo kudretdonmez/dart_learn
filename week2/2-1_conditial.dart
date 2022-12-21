@@ -1,21 +1,21 @@
 void main() {
   int money = 50;
-  String userName = "veli";
+  String userName = "ABC";
   // bool => 0 , 1
   bool isCustomerRich = false;
   print('$money' + userName);
   //if else
   if (money > 10) {
-    print("sen zenginsin");
+    print("you're rich customer.");
   } else {
-    print("simit yeriz");
+    print("you're poor.");
   }
 
   money = money - 10;
   if (money > 10) {
-    print("sen çok zenginsin");
+    print("you're so much rich.");
   } else {
-    print("ne işin var burda");
+    print("we can't accept you.");
   }
 
   // müşteri bankaya gelir ve 10 tlsi vardır ve bir sorgu yapar
@@ -26,12 +26,12 @@ void main() {
   const int bankingCost = 20;
   const int bankingCostGeneral = 20;
   if (newCostumerMoney > bankingCost) {
-    print('hoşgeldin beyefendi');
+    print('Welcome Sir');
     newCostumerMoney = newCostumerMoney - bankingCostGeneral;
   } else if (newCostumerMoney > 0) {
-    print('sira al');
+    print('Please come in.');
   } else {
-    print('kredini öde');
+    print('Pay credit.');
   }
 
   // bir mağazaya isim verilecek
@@ -66,7 +66,7 @@ void main() {
   }
 
   if (results.isEmpty) {
-    print('bulamadık');
+    print('We Cant Find');
   } else {
     print(results);
   }
