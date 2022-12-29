@@ -10,24 +10,24 @@ void main() {
 
   switch (classDegree) {
     case successValueHigh:
-      print('bravo');
+      print('Congratulations');
       isSuccess = true;
       break;
     case 1:
-      print('olur');
+      print('OK');
       isSuccess = true;
       break;
     case 0:
-      print('yeterli');
+      print('ENOUGH');
       isSuccess = true;
       break;
     default:
-      print('başarısız');
+      print('FAIL');
       isSuccess = false;
   }
-  print('çocuğun sonucu: $isSuccess');
+  print('Result is: $isSuccess');
 
-  //------------------------
+  //*------------------------
   String name = "emin";
 
   const String specialUser1 = "ali";
@@ -36,21 +36,21 @@ void main() {
   switch (name) {
     case "ali":
     case "emin":
-      print('bravo');
+      print('Congratulations');
 
       break;
     default:
-      print('sorunlu');
+      print('Forbidden');
   }
 
 // DOĞRU KULLANIM vvvv
   switch (name) {
     case specialUser1:
     case specialUser2:
-      print('bravo');
+      print('Congratulations');
 
       break;
     default:
-      print('sorunlu');
+      print('Forbidden');
   }
 }

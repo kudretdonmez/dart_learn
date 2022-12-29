@@ -7,17 +7,17 @@ void main() {
   money++;
   money--;
 
-  String name = "ali";
-  String mali = "mali";
+  String name1 = "ali";
+  String name2 = "mali";
 
-  print(name + mali);
+  print(name1 + name2);
 
-  if (name == 'ali') {}
-  if (name != 'ali') {}
-  if (name.length > 'ali'.length) {}
-  if (name.length < 'ali'.length) {}
-  if (name.length <= 'ali'.length) {}
-  if (name.length >= 'ali'.length) {}
+  if (name1 == 'ali') {}
+  if (name1 != 'ali') {}
+  if (name1.length > 'ali'.length) {}
+  if (name1.length < 'ali'.length) {}
+  if (name1.length <= 'ali'.length) {}
+  if (name1.length >= 'ali'.length) {}
 
   const int appleMoney = 20;
   const double disccount = 2.5;

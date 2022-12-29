@@ -13,24 +13,24 @@ void main() {
 
   moneys.sort();
   moneys.add(5);
-  // add SAYIYI SONA EKLER
-  moneys.insert(3, 255);
+  //* add SAYIYI SONA EKLER
 
+  //* belirtilen indexe sayıyı ekler
+  moneys.insert(3, 255);
   moneys.insert(0, 5);
-  //BAŞA SAYIYI EKLER
 
   print(moneys);
   newMoneys.add(5);
   newMoneys.clear;
   //listenin türü final olsa da referans type sayesinde listenin içine müdahale edilebilir.
 
-  List<double> customerMoney = List.generate(
+  List<int> customerMoney = List.generate(
     100,
     (index) {
       return index + 0;
     },
   );
-  print(customerMoney);
+  //print(customerMoney);
   // Customers 100 30 40 60
   // 35ten büyük olanları burada kredi verilir.
 
