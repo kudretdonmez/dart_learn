@@ -47,9 +47,9 @@ void showDollar(double exchange) {
 //MÜŞTERİNİN PARASININ OLUP OLMADIĞINI KONTROL EDEN FONK.
 void controlUserMoney(int money, int minimumValue) {
   if (money > minimumValue) {
-    print('parasi var');
+    print('He has money.');
   } else {
-    print('parasi yok');
+    print('He has no money.');
   }
 }
 
