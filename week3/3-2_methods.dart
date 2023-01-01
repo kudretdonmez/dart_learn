@@ -54,9 +54,9 @@ void controlUserMoney(int money, int minimumValue) {
 }
 
 double convertToStandartDollar(double userCash, {double dollarIndex = 25}) {
-  // EĞER DOLAR KURU GİRİLMEZSE DEFAULT OLARAK 25 ATANDI. SÜSLÜ PARANTEZDE KALIR.
-  // SÜSLÜ PARANTEZ İÇİ PARAMETRE OLARAK ATAMADIR.
-  // YA DEĞER VERİLECEK YA DA required OLACAK MUTLAKA YUKARIDAN DEĞER ALACAK.
+  //* EĞER DOLAR KURU GİRİLMEZSE DEFAULT OLARAK 25 ATANDI. SÜSLÜ PARANTEZDE KALIR.
+  //* SÜSLÜ PARANTEZ İÇİ PARAMETRE OLARAK ATAMADIR.
+  //* YA DEĞER VERİLECEK YA DA required OLACAK MUTLAKA YUKARIDAN DEĞER ALACAK.
   return userCash = userCash / dollarIndex;
 }
 

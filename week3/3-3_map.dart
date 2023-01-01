@@ -1,15 +1,15 @@
 void main() {
   Map<String, int> users = {'ahmet': 20, 'mehmet': 40};
   // MAP ikili olarak saklar
-  print('ahmetin parası ${users['ahmet']}');
+  print("ahmet's money = ${users['ahmet']}");
   // LİSTELERDEN FARKLI OLARAK İNDEX NUMARASI YOK.
   for (var item in users.keys) {
     //users.keys'TE DÖNER YANİ ahmet mehmette DÖNER
-    print('${item}in parası ${users[item]}');
+    print("${item}'s money = ${users[item]}");
   }
 
   for (var i = 0; i < users.length; i++) {
-    print('${users.keys.elementAt(i)}in parasi ${users.values.elementAt(i)}');
+    print("${users.keys.elementAt(i)}'s money = ${users.values.elementAt(i)}");
   }
 
   //
@@ -27,7 +27,7 @@ void main() {
     // BANKADAKİ HESAPLARI DÖNER
     for (var money in esBank[item]!) {
       if (money > 150) {
-        print('${item} BEY KREDİN HAZIR');
+        print('MR. ${item}. Your Credit is Ready ');
         break;
         /* BURADA BREAK DERSEK EĞER KULLANICININ 
         BİRDEN FAZLA 150 ÜSTÜ HESABI VARSA
@@ -42,6 +42,6 @@ void main() {
     for (var money in esBank[name]!) {
       result = result + money;
     }
-    print('$name senin toplam paran = $result ');
+    print('$name Your Total Money = $result ');
   }
 }
