@@ -1,6 +1,4 @@
 void main(List<String> args) {
-  final model = CarModel(category: CarModels.toyota, name: 'bmw x5', money: 15000, isSecondHand: false);
-
   final carItems = [
     CarModel(category: CarModels.toyota, name: 'corolla', money: 15, isSecondHand: false),
     CarModel(category: CarModels.bmw, name: 'x3', money: 35),
@@ -20,12 +18,12 @@ void main(List<String> args) {
 
   final isHaveCar = carItems.contains(newCar);
   if (isHaveCar) {
-    print('VAR');
+    print('YES');
   } else {
-    print('YOK');
+    print('NO');
   }
   //* elim  izde newcar ın olup olmadığını gösterir.
-  //? VAR
+  //? YES
 
   //!--------------------------------------------------------------------------------------------------
 
@@ -51,14 +49,19 @@ void main(List<String> args) {
     print(mercedesCar.name);
     isHaveCarMercedes = true;
   } catch (e) {
-    print('ARABA YOK');
+    print('WE DONT HAVE IT');
     isHaveCarMercedes = false;
   } finally {
-    print('SİPARİŞ VERİN $isHaveCarMercedes');
+    print('Give Order $isHaveCarMercedes');
   }
+
   //*TRY CATCH İLE ELİMİZDE BİRŞEYİN OLUP OLMADIĞINI KONTROL EDERİZ
-  //? ARABA YOK
-  //? SİPARİŞ VERİN false
+  //*Cevap dönerse try içine girer.
+  //*Cevap dönmezse catch içine girer.
+  //*finally her halükarda içine girer.
+
+  //? WE DONT HAVE IT
+  //? Give Order false
 
   //!--------------------------------------------------------------------------------------------------
 

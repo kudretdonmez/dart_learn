@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'model/product_config_model.dart';
 
-void main(List<String> args) {
+void main() {
   final newProduct = Product.money;
   calculateMoney(Product.money ?? 0);
 
@@ -19,7 +19,7 @@ void main(List<String> args) {
 void calculateMoney(int money) {
   if (money > 5) {
 //!   ?? sıfıra eşit değil ve 5ten büyükse demek
-    print('5 tl daha ekledik');
+    print('Add 5 Dollar');
     Product.incrementMoney(5);
     print(Product.money);
   }

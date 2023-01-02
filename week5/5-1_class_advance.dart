@@ -1,11 +1,11 @@
-void main(List<String> args) {
+void main() {
   final user = _User('veli', age: 21);
 
   if (user.age is int) {
     if (user.age! < 18) {
       //YUKARIDA is İLE İNT OLUP OLMADIĞINI DENETLEDİĞİMİZ İÇİN
       //ÜNLEM KOYACAK FORCE EDEBİLİRİZ
-      print('evet küçük');
+      print('less money');
       user.updateMoneyWithString("TRY");
     } else {
       user.updateMoneyWithNumber(15);
@@ -28,6 +28,14 @@ void main(List<String> args) {
 
   print(moneyBank1 + moneyBank2);
   //OPERATOR İLE ARTIYI AKTİF EDİLDİ.
+  //*----------
+
+  moneyBank1.money += 10;
+  print(moneyBank1.money);
+
+  moneyBank1
+    ..money += 10
+    ..updateName('kuti');
 }
 
 class _User {
@@ -48,11 +56,32 @@ class _User {
 }
 
 class Bank {
-  final int money;
+  int money;
   final String id;
+  String? name;
 
   Bank(this.money, this.id);
-  int operator +(Bank newBank) {
-    return this.money + newBank.money;
+  int operator +(Bank other) {
+    return this.money + other.money;
+  }
+
+  void updateName(String name) {
+    this.name = name;
+  }
+
+  @override
+  String toString() {
+    return super.toString() + 'asfkjşa';
+  }
+
+  @override
+  bool operator ==(Object object) {
+    return object is Bank && object.id == id;
+  }
+}
+
+mixin BankMixin {
+  void calculateMoney(int money) {
+    print(money);
   }
 }

@@ -1,5 +1,5 @@
 class ProductConfig {
-  static final ProductConfig instance = ProductConfig._("a");
+  static final ProductConfig instance = ProductConfig._("acxzc");
 
   final String apiKey;
 
