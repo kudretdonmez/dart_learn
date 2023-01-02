@@ -12,19 +12,19 @@ void main() {
   print(user1.name);
   //
   if (user3.city == null) {
-    print('müşteri şehir bilgisi vermemiş');
+    print('there is not city info');
   } else {
     if (user3.city!.isEmpty) {
-      print('buraya kampanya yok');
+      print('you have not campaign');
     }
     if (user3.city == 'istanbul') {
-      print('tebrikler kampanya');
+      print('Congrats on your campaign.');
     }
   }
 
   if (user3.isSpecialUser('1243')) {
     user3.money += 10;
-    print('kampanyanız VAAR');
+    print('You have not campaign');
     print(user3.money);
     user3.isEmptyId;
   }

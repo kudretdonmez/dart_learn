@@ -17,15 +17,12 @@ abstract class IUser {
   IUser(this.name, this.money);
 
   void sayMoneyWithCompanyName() {
-    print('Ahmet $money paranız var');
+    print('Mr. $name, you have $money dollar');
   }
 }
 
 class User extends IUser {
-  final String name;
-  final int money;
-
-  User(this.name, this.money) : super(name, money);
+  User(String name, int money) : super(name, money);
 }
 
 class BankUser extends IUser {

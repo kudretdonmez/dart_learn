@@ -32,5 +32,5 @@ class User {
 
   bool get isEmptyId => _id.isEmpty;
   // => GERİYE DEĞERİ DÖNDÜRECEK DEMEK
-  // get BU DEĞER ÇAĞRILDIĞINDA HESAĞLANIR DEMEK
+  // get BU DEĞER ÇAĞRILDIĞINDA HESAPLANIR DEMEK
 }

@@ -19,7 +19,9 @@ class Student implements IStudent {
   Student(this.name, this.age);
 
   @override
-  void saySomething() {}
+  void saySomething() {
+    print(name);
+  }
 
   @override
   int? classId;
