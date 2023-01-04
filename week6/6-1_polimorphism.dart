@@ -1,10 +1,10 @@
 void main(List<String> args) {
-  IUser user = Turk();
+  IUser user = Turkish();
   user.sayName();
   user = English();
   user.sayName();
 
-  //? hello ALİ
+  //? hoşgeldin ALİ
   //? welcome JACK
 }
 
@@ -16,12 +16,12 @@ abstract class IUser {
   void sayName();
 }
 
-class Turk implements IUser {
+class Turkish implements IUser {
   @override
   String get name => 'ALİ';
   @override
   void sayName() {
-    print('hello $name');
+    print('hoşgeldin $name');
   }
 }
 
